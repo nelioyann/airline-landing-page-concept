@@ -3,8 +3,8 @@
     "short_name": "Mister France",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#585a79",
-    "theme_color": "#585a79",
+    "background_color": "#061387",
+    "theme_color": "#061387",
     "orientation": "portrait-primary",
     "icons": [
         {

@@ -1,16 +1,16 @@
 :root {
-  --blackH: #2f3640;
-  --blueH: #192a56;
-  --greyL: #7f8fa6;
-  --whiteL: #f5f6fa;
-  --orangeL: #e84118;
+  --blackH: #FFB0B0;
+  --clr-ultramarine: #061387;
+  --clr-grey: #f5f5f5;
+  --clr-baseblue: #4259ED;
+  --clr-selection: #37CFB1;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 body{
@@ -18,14 +18,42 @@ body{
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
 }
-button.installPrompt{
-  z-index: 99;
-  position: absolute;
-  top: 200px;
+header{
+  height: 20vh;
+  min-height: 80px;
+  max-height: 100px;
+  background-color: var(--clr-ultramarine);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .site_wrapper {
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background-color: var(--clr-grey);
+}
+
+
+/* HEADER */
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoImg{
+  width: 50px;
+}
+.logoBrand{
+  text-decoration: none;
+  color: var(--clr-grey);
+}
+
+/* MAIN */
+main{
+  margin: auto;
+  max-width: 800px;
+  width: 100%;
+  min-width: 250px;
 }
