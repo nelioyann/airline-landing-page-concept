@@ -1,0 +1,31 @@
+:root {
+  --blackH: #2f3640;
+  --blueH: #192a56;
+  --greyL: #7f8fa6;
+  --whiteL: #f5f6fa;
+  --orangeL: #e84118;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+button.installPrompt{
+  z-index: 99;
+  position: absolute;
+  top: 200px;
+}
+
+.site_wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
