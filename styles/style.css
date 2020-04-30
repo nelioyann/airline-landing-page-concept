@@ -242,7 +242,8 @@ main {
 .type_selection,
 .visit_selection,
 .email_completion,
-.countries_selection {
+.countries_selection,
+.date_selection {
   margin: auto 1em;
   display: flex;
   justify-content: space-around;
@@ -332,15 +333,15 @@ main {
   color: var(--clr-baseblue);
 }
 
-.email_input, .country_input{
+.email_input, .country_input, .date_input{
   background-color: ivory;
   border: none;
   outline: none;
   font-size: 19px;
   color: var(--clrWhite);
   border: 2px solid var(--clr-baseblue);
-  height: 30px;
-  padding: 20px;
+  
+  padding: 10px;
   width: 100%;
   border-radius: 5px;
   transition: 300ms;
@@ -350,14 +351,14 @@ main {
   border: 2px solid var(--clr-selection);
 
 }
-.email_input::placeholder, .country_input::placeholder{
+.email_input::placeholder, .country_input::placeholder, .date_input::placeholder{
   color: var(--clr-noir) ;
   font-size: 0.8em;
 }
 
-.email_completion,.countries_selection{
+.email_completion,.countries_selection, .date_selection{
   flex-direction: column;
 }
-.email_completion label,.countries_selection label{
+.email_completion label,.countries_selection label, .date_selection label{
   margin: 1em;
 }
