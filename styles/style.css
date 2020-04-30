@@ -15,11 +15,11 @@ h1,
 h2,
 h3 {
   font-weight: lighter;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 h3{
-  padding-top: 10vh;
+  padding: 10vh 1em 0;
 }
 body {
   margin: 0;
@@ -175,12 +175,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  align-items: center;visibility: hidden;
+  width: 100vw;
 }
 /* .form_fields:not(:first-of-type) { */
-.form_fields{
-  visibility: hidden;
-  width: 100vw;
+.form_fields span{
+  font-size: clamp(12px, 2vmin, 16px );
 }
 .form_people label,
 .form_age label,
@@ -210,6 +210,7 @@ main {
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 1em;
+  width: clamp(70px, 100%, 150px);
   opacity: 0.6;
   border: 1px solid transparent;
   transition: 300ms;
@@ -232,7 +233,7 @@ main {
 .visit_selection,
 .email_completion,
 .countries_selection {
-  margin: auto;
+  margin: auto 1em;
   display: flex;
   justify-content: space-around;
   width: clamp(250px, 100%, 500px);
@@ -303,13 +304,13 @@ main {
   /* background: linear-gradient(90deg, rgba(182, 87, 214, 0.774) 45%, rgba(0,212,255,1) 96%); */
   background-color: transparent;
   color: #fff;
-  padding: 0.8em 1em;
-  font-size: 1.2rem;
+  padding: 0.5em 0.8em;
+  font-size: 1rem;
   outline: none;
   cursor: pointer;
   font-weight: bold;
   border: none;
-  border-radius: 50px;
+  border-radius: 40px;
   box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -346,4 +347,7 @@ main {
 
 .email_completion,.countries_selection{
   flex-direction: column;
+}
+.email_completion label,.countries_selection label{
+  margin: 1em;
 }
