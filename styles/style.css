@@ -134,34 +134,80 @@ main {
   justify-content: center;
   align-items: center;
 }
-.form_people label, .form_age label, .form_gender label{
-  /* background-color: rgba(var(--clr-ultramarine), 0.5); */
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+.form_people label,
+.form_age label,
+.form_gender label,
+.form_type label{
   background-color: ivory;
-  border-radius: 5px;
   cursor: pointer;
   color: var(--clr-noir);
-  padding: 10px;
-  opacity: 0.8;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  transition: transform 300ms;
 }
-.form_people label:hover,
-.form_age label:hover,
-.form_gender label:hover{
+.people_label:hover,
+.age_label:hover,
+.gender_label:hover,
+.type_label:hover{
   transform: translateY(-5px);
 }
-.people_img, .gender_img{
+.people_label,
+.age_label,
+.gender_label,
+.type_label{
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 1em;
+  opacity: 0.6;
+  border: 1px solid transparent;
+  transition:  300ms;
+}
+.people_img, .gender_img, .type_img{
   width: 100px;
   height: 100px;
   margin: auto;
   background-position: center center;
   background-size: cover;
-  /* padding: 50px; */
-  
-  /* background-color: var(--clr-ultramarine); */
+}
+.people_selection,
+.age_selection,
+.gender_selection,
+.type_selection
+  {
+  display: flex;
+  justify-content: space-around;
+  width: clamp(250px, 100%, 500px);
+}
+.people_selection input, .age_selection input, .gender_selection input{
+  display: none;
+}
+
+.form_people input:checked ~ .people_label,
+.form_age input:checked ~ .age_label, 
+.form_gender input:checked ~ .gender_label {
+  color: var(--clr-baseblue);
+  border: 1px solid var(--clr-ultramarine);
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Specificity */
+.age_label{
+  font-size: 1.3rem;
+}
+#female ~ .gender_label > .gender_img{
+  background-image: url("../images/female.png");
+}
+#male ~ .gender_label > .gender_img{
+  background-image: url("../images/male.png");
+}
+#trans ~ .gender_label > .gender_img{
+  background-image: url("../images/trans.png");
 }
 #one_p ~ .people_label > .people_img{
   background-image: url("../images/onep.png");
@@ -171,39 +217,4 @@ main {
 }
 #three_p ~ .people_label > .people_img{
   background-image: url("../images/threep.png");
-}
-.people_selections, .age_selection, .gender_selection{
-  display: flex;
-  justify-content: space-around;
-  width: clamp(250px, 100%, 500px);
-}
-.people_selections input, .age_selection input, .gender_selection input{
-  display: none;
-}
-
-.form_people input:checked ~ .people_label {
-  color: var(--clr-baseblue);
-  opacity: 1;
-}
-.form_age label{
-  padding: 0;
-}
-.age_label{
-  border-radius: 5px;
-  font-size: 1.3rem;
-  padding: 2em;
-}
-.form_age input:checked ~ .age_label {
-  color: var(--clr-grey);
-  background-color: var(--clr-selection);
-}
-
-#female ~ .gender_label > .gender_img{
-  background-image: url("../images/female.png");
-}
-#male ~ .gender_label > .gender_img{
-  background-image: url("../images/male.png");
-}
-#trans ~ .gender_label > .gender_img{
-  background-image: url("../images/trans.png");
 }
