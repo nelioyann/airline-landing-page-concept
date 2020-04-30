@@ -6,9 +6,10 @@ const staticCacheName = "site-static-ve45d4vs1"
 const assets = [
     '/',
     '/index.html',
-    '/style.css',
+    '/styles/style.css',
     '/scripts/script.js',
     '/scripts/app.js',
+    '/scripts/animation.js',
     "/images/icons/icon-72x72.png",
     "/images/icons/icon-144x144.png",
     "/images/icons/icon-152x152.png"

@@ -201,13 +201,14 @@ main {
 .visit_label:hover {
   opacity: 1;
   transform: translateY(-5px);
+  box-shadow: 0px 7px 6px -5px rgba(0, 0, 0, 0.2);
 }
 .people_label,
 .age_label,
 .gender_label,
 .type_label,
 .visit_label {
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 1em;
   width: clamp(70px, 100%, 150px);
@@ -304,7 +305,7 @@ main {
   /* background: linear-gradient(90deg, rgba(182, 87, 214, 0.774) 45%, rgba(0,212,255,1) 96%); */
   background-color: transparent;
   color: #fff;
-  padding: 0.5em 0.8em;
+  padding: 1em 1.1em;
   font-size: 1rem;
   outline: none;
   cursor: pointer;
