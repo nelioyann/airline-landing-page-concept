@@ -85,6 +85,16 @@ header {
     url("../images/hero.jpg") no-repeat center center scroll;
 }
 
+.hero_subtitle {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--clr-noir);
+  font-size: 6vmin;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 40px;
+}
 .hero_title {
   font-style: normal;
   font-weight: bold;
