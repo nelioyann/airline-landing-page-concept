@@ -183,11 +183,23 @@
                         <button data-current="5" data-destination="6" class="next nav_btn">Suivant &#xbb;</button>
                     </div>
                 </div>
-                <div data-index="6" class="form_fields form_destinations">
+                <div data-index="6" class="form_fields form_mail">
+                    <h3>Pour que l’on puisse vous informer de la suite du concours, veuillez indiquer une adresse mail de contact :</h3>
+                    <div class="email_completion">
+                        <label for="email">Email
+
+                            <input  placeholder="email..." class="email_input" type="text" name="email" id="email">
+                        </label>
+                    </div>
+                    <div class="form_nav">
+                        <button data-current="6" data-destination="5" class="previous nav_btn">&#xab; Précédent</button>
+                        <button data-current="6" data-destination="7" class="next nav_btn">Suivant &#xbb;</button>
+                    </div>
+                </div>
+                <div data-index="7" class="form_fields form_destinations">
                     <h3>Indiquez trois destinations déjà visitées :</h3>
                     <div class="countries_selection">
                         <label for="countryuno">Destination 1
-
                             <input  placeholder="pays..." class="country_input" type="text" id="countryuno" name="pays">
                         </label>
                         <label for="countrydos">Destination 2
@@ -201,8 +213,8 @@
 
                     </div>
                     <div class="form_nav">
-                        <button data-current="6" data-destination="5" class="previous nav_btn">&#xab; Précédent</button>
-                        <button data-current="6" data-destination="completed" class="submit nav_btn"> &#x2713;
+                        <button data-current="7" data-destination="6" class="previous nav_btn">&#xab; Précédent</button>
+                        <button data-current="7" data-destination="completed" class="submit nav_btn"> &#x2713;
                             Envoyer</button>
                     </div>
                 </div>
