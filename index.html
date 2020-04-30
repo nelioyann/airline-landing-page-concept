@@ -23,6 +23,10 @@
 
 <body>
     <div class="siteWrapper">
+        <div data-index="completed" class="overlay">
+            <div class="wheel_img"></div>
+            <div>Vous recevrez bientot les resultats du concours</div>
+        </div>
         <header>
             <nav class="navigation">
                 <div class="logo">
@@ -42,7 +46,7 @@
         </header>
         <main>
             <form action="" class="trip_form">
-                <div class="form_fields form_people">
+                <div data-index="0" class="form_fields form_people">
                     <h2>Combien de passagers:</h2>
                     <div class="people_selection">
                         <label for="one_p">
@@ -70,8 +74,11 @@
                             </div>
                         </label>
                     </div>
+                    <div class="form_nav">
+                        <button data-current="0" data-destination="1" class="next nav_btn">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_age">
+                <div data-index="1" class="form_fields form_age">
                     <h3>Quel age avez vous ?</h3>
                     <div class="age_selection">
                         <label for="tenthy">
@@ -87,8 +94,12 @@
                             <div class="age_label ">30+</div>
                         </label>
                     </div>
+                    <div class="form_nav">
+                        <button class="previous nav_btn" data-current="1" data-destination="0">&#xab;  Précédent</button>
+                        <button class="next nav_btn" data-current="1" data-destination="2">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_gender">
+                <div data-index="2" class="form_fields form_gender">
                     <h3>Genre</h3>
                     <div class="gender_selection">
                         <label for="female">
@@ -113,34 +124,71 @@
                             </div>
                         </label>
                     </div>
+                    <div class="form_nav">
+                        <button data-current="2" data-destination="1" class="previous nav_btn">&#xab;  Précédent</button>
+                        <button data-current="2" data-destination="3" class="next nav_btn">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_type">
+                <div data-index="3" class="form_fields form_type">
                     <h3>Quel type de séjour voulez-vous ?</h3>
                     <div class="type_selection">
                         <label for="coconut">
-                            <input type="radio" name="gender" id="coconut">
+                            <input type="radio" name="type" id="coconut">
                             <div class="type_label ">
                                 <div class="type_img"></div>
                                 <span>Chill</span>
                             </div>
                         </label>
                         <label for="bag">
-                            <input type="radio" name="gender" id="bag">
+                            <input type="radio" name="type" id="bag">
                             <div class="type_label ">
                                 <div class="type_img"></div>
                                 <span>Rando</span>
                             </div>
                         </label>
                     </div>
+                    <div class="form_nav">
+                        <button data-current="3" data-destination="2" class="previous nav_btn">&#xab;  Précédent</button>
+                        <button data-current="3" data-destination="4" class="next nav_btn">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_visit">
+                <div data-index="4" class="form_fields form_visit">
                     <h3>Bars ou musées ?</h3>
+                    <div class="visit_selection">
+                        <label for="bar">
+                            <input type="radio" name="visit" id="bar">
+                            <div class="visit_label ">
+                                <div class="visit_img"></div>
+                                <span>Bars</span>
+                            </div>
+                        </label>
+                        <label for="museum">
+                            <input type="radio" name="visit" id="museum">
+                            <div class="visit_label ">
+                                <div class="visit_img"></div>
+                                <span>Musées</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="form_nav">
+                        <button data-current="4" data-destination="3" class="previous nav_btn">&#xab;  Précédent</button>
+                        <button data-current="4" data-destination="5" class="next nav_btn">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_mail">
+                <div data-index="5" class="form_fields form_mail">
                     <h3>Veuillez entrer votre adresse mail ?</h3>
+                    <div class="form_nav">
+                        <button data-current="5" data-destination="4" class="previous nav_btn">&#xab;  Précédent</button>
+                        <button data-current="5" data-destination="6" class="next nav_btn">Suivant  &#xbb;</button>
+                    </div>
                 </div>
-                <div class="form_fields form_destinations"></div>
-
+                <div data-index="6" class="form_fields form_destinations">
+                    <h2>Eliminer 3 destinations du tirage</h2>
+                    <div class="form_nav">
+                        <button data-current="6" data-destination="5" class="previous nav_btn">&#xab;  Précédent</button>
+                        <button data-current="6" data-destination="completed" class="submit nav_btn"> &#x2713; Envoyer</button>
+                    </div>
+                </div>
             </form>
         </main>
         <footer>
