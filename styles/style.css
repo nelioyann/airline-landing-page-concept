@@ -87,13 +87,13 @@ header {
 
 .hero_subtitle {
   font-style: normal;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--clr-noir);
-  font-size: 6vmin;
-  letter-spacing: 0.03em;
+  font-size: 4vmin;
+  /* letter-spacing: 0.03em; */
   line-height: 1;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-bottom: 40px;
+  /* text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8); */
+  margin-bottom: 70px;
 }
 .hero_title {
   font-style: normal;
@@ -103,7 +103,7 @@ header {
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .hero_button {
@@ -181,7 +181,6 @@ main {
   top: 0;left: 0;
   margin: auto;
   height: 100vh;
-  /* width: clamp(250px, 80%, 800px); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -218,7 +217,7 @@ main {
 .gender_label,
 .type_label,
 .visit_label {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 1em;
   width: clamp(70px, 100%, 150px);

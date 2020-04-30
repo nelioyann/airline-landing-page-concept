@@ -11,6 +11,7 @@ overlay_tl
 .to('.wheel_img', {rotation: 360})
 form_tl
     .to(".hero_title", {autoAlpha: 0, y: -20})
+    .to(".hero_subtitle", {autoAlpha: 0, y: -20})
     .to(".hero_button", {autoAlpha: 0, y: -20})
     .to(".trip_form", 1,{ autoAlpha: 1, y: "0vh"})
     .to(".logoBrand", {color: "#000"}, "-=1")
