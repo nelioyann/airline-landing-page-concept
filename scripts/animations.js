@@ -14,7 +14,7 @@ form_tl
     .to(".hero_button", {autoAlpha: 0, y: -20})
     .to(".trip_form", 1,{ autoAlpha: 1, y: "0vh"})
     .to(".logo", 2, {left: "30vh"}, "-=1")
-    .to(".logoBrand", 1, {color: "#000"})
+    .to(".logoBrand", {color: "#000"}, "-=1")
     .to(".form_people", {autoAlpha: 1}, "-=1")
     
     // .from(".inputs_wrapper", { autoAlpha: 0, y: 30 })
