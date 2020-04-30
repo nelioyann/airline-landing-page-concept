@@ -47,7 +47,7 @@
         <main>
             <form action="" class="trip_form">
                 <div data-index="0" class="form_fields form_people">
-                    <h2>Combien de passagers:</h2>
+                    <h3>Combien de passagers:</h3>
                     <div class="people_selection">
                         <label for="one_p">
                             <input type="radio" name="people" id="one_p">
@@ -177,13 +177,17 @@
                 </div>
                 <div data-index="5" class="form_fields form_mail">
                     <h3>Veuillez entrer votre adresse mail ?</h3>
+                    <div class="email_completion">
+                        <label for="email"></label>
+                        <input class="email_input" type="text" name="email" id="email">
+                    </div>
                     <div class="form_nav">
                         <button data-current="5" data-destination="4" class="previous nav_btn">&#xab;  Précédent</button>
                         <button data-current="5" data-destination="6" class="next nav_btn">Suivant  &#xbb;</button>
                     </div>
                 </div>
                 <div data-index="6" class="form_fields form_destinations">
-                    <h2>Eliminer 3 destinations du tirage</h2>
+                    <h3>Eliminer 3 destinations du tirage</h3>
                     <div class="form_nav">
                         <button data-current="6" data-destination="5" class="previous nav_btn">&#xab;  Précédent</button>
                         <button data-current="6" data-destination="completed" class="submit nav_btn"> &#x2713; Envoyer</button>
