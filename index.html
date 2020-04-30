@@ -9,10 +9,12 @@
     <title>Mister France</title>
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#061387">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Yanns PWA" />
     <meta property="og:image" content="./images/icons/icon-152x152.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png" />
     <meta name="description" content="Passer les meilleures vacances de votre vie avec Mister France">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
@@ -25,30 +27,103 @@
             <nav class="navigation">
                 <div class="logo">
                     <img class="logoImg" src="./images/transportation.png" alt="logo">
-                    <a class="logoBrand" href="#">Mister France</a>
+                    <a class="logoBrand" href="/">Mister France</a>
                 </div>
+
+                <section class="hero_wrapper" role="img" aria-label="Image Description">
+                    <h1 class="hero_title">
+                        Mister France
+                    </h1>
+                    <button class="hero_button">
+                        Participer au jeu concours
+                    </button>
+                </section>
+
         </header>
         <main>
             <form action="" class="trip_form">
-                <div class="form_people">
-                    <h3>Nombre de passagers:</h3>
+                <div class="form_fields form_people">
+                    <h2>Combien de passagers:</h2>
+                    <div class="people_selections">
+                        <label for="one_p">
+                            <input type="radio" name="people" id="one_p">
+                            <div class="people_label">
+
+                                <div class="people_img "></div>
+                                <span>1 personne</span>
+                            </div>
+                        </label>
+                        <label for="two_p">
+                            <input type="radio" name="people" id="two_p">
+                            <div class="people_label">
+
+                                <div class="people_img "></div>
+                                <span>2 personnes</span>
+                            </div>
+                        </label>
+                        <label for="three_p">
+                            <input type="radio" name="people" id="three_p">
+                            <div class="people_label">
+
+                                <div class="people_img "></div>
+                                <span>3 personnes</span>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-                <div class="form_age">
-                    <h3>Tranche d'age:</h3>
+                <div class="form_fields form_age">
+                    <h3>Quel age avez vous ?</h3>
+                    <div class="age_selection">
+                        <label for="tenthy">
+                            <input type="radio" name="age" id="tenthy">
+                            <div class="age_label ">10-20</div>
+                        </label>
+                        <label for="twenthy">
+                            <input type="radio" name="age" id="twenthy">
+                            <div class="age_label ">20-30</div>
+                        </label>
+                        <label for="thirthy">
+                            <input type="radio" name="age" id="thirthy">
+                            <div class="age_label ">30+</div>
+                        </label>
+                    </div>
                 </div>
-                <div class="form_gender">
+                <div class="form_fields form_gender">
                     <h3>Genre</h3>
+                    <div class="gender_selection">
+                        <label for="female">
+                            <input type="radio" name="gender" id="female">
+                            <div class="gender_label ">
+                                <div class="gender_img"></div>
+                                <span>Femme</span>
+                            </div>
+                        </label>
+                        <label for="male">
+                            <input type="radio" name="gender" id="male">
+                            <div class="gender_label ">
+                                <div class="gender_img"></div>
+                                <span>Homme</span>
+                            </div>
+                        </label>
+                        <label for="trans">
+                            <input type="radio" name="gender" id="trans">
+                            <div class="gender_label ">
+                                <div class="gender_img"></div>
+                                <span>Autres</span>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-                <div class="form_type">
+                <div class="form_fields form_type">
                     <h3>Quel type de séjour voulez-vous ?</h3>
                 </div>
-                <div class="form_visit">
+                <div class="form_fields form_visit">
                     <h3>Bars ou musées ?</h3>
                 </div>
-                <div class="form_mail">
+                <div class="form_fields form_mail">
                     <h3>Veuillez entrer votre adresse mail ?</h3>
                 </div>
-                <div class="form_destinations"></div>
+                <div class="form_fields form_destinations"></div>
 
             </form>
         </main>
@@ -56,7 +131,9 @@
 
         </footer>
     </div>
-    <script src="./scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="./scripts/animations.js"></script>
+    <!-- <script src="./scripts/app.js"></script> -->
     <script src="./scripts/script.js"></script>
 </body>
 
