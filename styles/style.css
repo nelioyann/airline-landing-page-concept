@@ -56,8 +56,8 @@ header {
   z-index: 5;
   backdrop-filter: blur(5px);
   color: var(--clr-noir);
-  
   background-color: rgba(255, 255, 255, 0.52);
+  visibility: hidden;
 }
 
 .wheel_img{
@@ -75,44 +75,59 @@ header {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  /* filter: grayscale(2); */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background: radial-gradient(
+  background-image: url("../images/airplane.jpg");
+  /* background: radial-gradient(
       ellipse at center,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url("../images/hero.jpg") no-repeat center center scroll;
+    url("../images/airplane.jpg") no-repeat center center scroll; */
 }
 
 .hero_subtitle {
   font-style: normal;
-  /* font-weight: bold; */
-  color: var(--clr-noir);
+  color: var(--clr-grey);
   font-size: 4vmin;
-  /* letter-spacing: 0.03em; */
   line-height: 1;
-  /* text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8); */
+  z-index: 3;
   margin-bottom: 70px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+.hero_overlay{
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 .hero_title {
   font-style: normal;
   font-weight: bold;
-  color: #eee;
-  font-size: 11vmin;
+  z-index: 3;
+  color: var(--clr-grey);
+  font-size: 12vmin;
   letter-spacing: 0.03em;
   line-height: 1;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
 
 .hero_button {
-  background: #098191;
+  background: var(--clr-ultramarine);
   border-radius: 5px;
   display: inline-block;
   border: none;
   padding: 0.75rem 1.5rem;
   margin: 0;
+  z-index: 3;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2rem;
@@ -120,7 +135,7 @@ header {
   text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: box-shadow 300ms;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .hero_button:focus {
@@ -321,8 +336,8 @@ main {
   cursor: pointer;
   font-weight: bold;
   border: none;
-  border-radius: 40px;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.2);
 }
 
 .next, .submit{
