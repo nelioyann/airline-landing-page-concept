@@ -1,7 +1,9 @@
+// Spinning logo timeline
 var globe_tl = gsap.timeline({ repeat: -1, repeatDelay: 10, defaults: { duration: 1, ease: "power3.Out" } });
+
 var form_tl = gsap.timeline({ paused: true, reversed: true, defaults: { duration: 0.6, ease: "power2.inOut" } });
 var overlay_tl = gsap.timeline({ repeat: -1, repeatDelay: 0, defaults: { duration: 3, ease: "power3.Out" } });
-
+var reveal_survey = gsap.timeline({})
 gsap.to(".trip_form", 0.2, {autoAlpha: 0})
 gsap.to(".form_fields", 0.2, {autoAlpha: 0})
 gsap.to(".overlay", {autoAlpha: 0})

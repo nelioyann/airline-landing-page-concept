@@ -21,11 +21,11 @@ const getDestination = (e) =>{
 } 
 
 const hideUi = (element) =>{
-    gsap.to(element, 0.3, {autoAlpha: 0, y: -20})
+    gsap.to(element, 0.5, {autoAlpha: 0})
 }
 const showUi = (element) =>{
-    gsap.to(element, 0.2, {autoAlpha: 0, y: 20}, "+=1")
-    gsap.to(element, 0.5, {autoAlpha: 1, y: 0}, "+=1.3")
+    // gsap.to(element, 0.2, {autoAlpha: 0, y: 20}, "+=1")
+    gsap.to(element, 0.5, {autoAlpha: 1, y: 0, delay: 1.1})
 
 }
 nav_btns.forEach(nav_btn =>{
